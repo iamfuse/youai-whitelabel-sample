@@ -1,14 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 export const runtime = "edge";
 
-const YouAiOrganizationSecretToken = 'PASTE_YOUR_SECRET_TOKEN_HERE';
+const YouAiOrganizationSecretToken = '930bc16b-ab59-49e8-b69b-0548ae6368a2:8571c328ab30646c0b68c433c9d3321e';
 
 const YouAiApiUrl = `https://api.youai.ai/v1/organizations/api/auth/get-token`;
 
 const RawAiUrls: {[index: string]: any} = {
-    'social-media-creativity-planner': 'https://youai.ai/ais/test-ai-0aba1a6c/use',
-    'content-repurposing-assistant': 'https://youai.ai/ais/test-ai-0aba1a6c/use',
-    'caption-genius': 'https://youai.ai/ais/test-ai-0aba1a6c/use',
+    'social-media-creativity-planner': 'https://youai.ai/ais/social-media-creativity-planner-d70e4f19/use',
+    'content-repurposing-assistant': 'https://youai.ai/ais/content-repurposing-assistant-3b488d38/use',
+    'caption-genius': 'https://youai.ai/ais/caption-genius-092975a2/use',
 };
 
 export async function GET(req: NextRequest) {
