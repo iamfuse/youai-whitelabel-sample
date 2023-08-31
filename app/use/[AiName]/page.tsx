@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 const UseAi = (props: any) => {
-  const [username, onSetUsername] = useState("sean");
+  const [username, onSetUsername] = useState("");
   const [isLoading, onSetIsLoading] = useState(false);
   const [iframeUrl, onSetIframeUrl] = useState(null);
 
